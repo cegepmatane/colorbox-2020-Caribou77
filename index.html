@@ -2,11 +2,12 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>LightBox</title>
+	<link href="lightbox/css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
 	<header>
-		<h1></h1>
+		<h1>TEST</h1>
 		<nav></nav>
 	</header>
 	
@@ -14,13 +15,24 @@
 		<header><h2></h2></header>
 
 		<div>
-			<a href="illustration/caribou2.jpg"><img src="illustration/mini/mini-caribou2.jpg"></a>
-			<a href="illustration/caribou3.jpg"><img src="illustration/mini/mini-caribou3.jpg"></a>
-			<a href="illustration/caribou4.jpg"><img src="illustration/mini/mini-caribou4.jpg"></a>
+			<a data-lightbox="diaporama" href="illustration/caribou2.jpg"><img src="illustration/mini/mini-caribou2.jpg"></a>
+			<a data-lightbox="diaporama" href="illustration/caribou3.jpg"><img src="illustration/mini/mini-caribou3.jpg"></a>
+			<a data-lightbox="diaporama" href="illustration/caribou4.jpg"><img src="illustration/mini/mini-caribou4.jpg"></a>
 
-	
+		</div>
 	</section>
-	
-	<footer><span id="signature"></span></footer>
+
+	<footer>
+		<span id="signature"></span>
+	</footer>
+
+	<script src="lightbox/js/jquery-pour-lightbox.js"></script>
+	<script src="lightbox/js/lightbox.js"></script>
+	<script>
+		lightbox.option({
+			'resizeDuration': 200,
+			'wrapAround': true
+		})
+	</script>
 </body>
 </html>
